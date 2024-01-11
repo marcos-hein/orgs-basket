@@ -22,23 +22,23 @@ const basket = {
     title: "Itens da cesta",
     list: [
       {
-        nome: "Tomate",
+        name: "Tomate",
         image: tomato
       },
       {
-        nome: "Brócolis",
+        name: "Brócolis",
         image: broccoli
       },
       {
-        nome: "Batata",
+        name: "Batata",
         image: potato
       },
       {
-        nome: "Pepino",
+        name: "Pepino",
         image: cucumber
       },
       {
-        nome: "Abóbora",
+        name: "Abóbora",
         image: pumpkin
       },
     ]

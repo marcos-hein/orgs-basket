@@ -3,7 +3,7 @@ import { Image, StyleSheet, View } from "react-native"
 import Text from "../../../components/Text"
 import Button from "../../../components/Button"
 
-export default function Details({ farmLogo, productName, farmName, description, price, textButton }) {
+export default function Details({ farmLogo, productName, farmName, description, price, textButton, items }) {
   return (
     <>
       <Text style={styles.productName}>{productName}</Text>
