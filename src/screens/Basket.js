@@ -1,5 +1,7 @@
 import React from 'react'
-import { StyleSheet, Image, Dimensions, Text, View } from 'react-native'
+import { StyleSheet, Image, Dimensions, View } from 'react-native'
+
+import Text from '../components/Text'
 
 import topImage from '../../assets/topo.png'
 import logoImage from '../../assets/logo.png'
