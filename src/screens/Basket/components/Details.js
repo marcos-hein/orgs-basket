@@ -1,21 +1,17 @@
 import { Image, StyleSheet, View } from "react-native"
 
 import Text from "../../../components/Text"
-import logoImage from "../../../../assets/logo.png"
 
-export default function Details() {
+export default function Details({ farmLogo, productName, farmName, description, price }) {
   return (
     <>
-      <Text style={styles.productName}>Cesta de Verduras</Text>
+      <Text style={styles.productName}>{productName}</Text>
       <View style={styles.farmWrapper}>
-        <Image source={logoImage} style={styles.farmImage} />
-        <Text style={styles.farmName}>Jenny Jack Farm</Text>
+        <Image source={farmLogo} style={styles.farmImage} />
+        <Text style={styles.farmName}>{farmName}</Text>
       </View>
-      <Text style={styles.description}>
-        Uma cesta com produtos selecionados
-        cuidadosamente, da fazenda para a sua casa
-      </Text>
-      <Text style={styles.price}>R$ 50,00</Text>
+      <Text style={styles.description}>{description}</Text>
+      <Text style={styles.price}>{price}</Text>
     </>
   )
 }

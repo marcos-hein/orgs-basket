@@ -5,11 +5,11 @@ import topImage from '../../../../assets/topo.png'
 
 const width = Dimensions.get('screen').width
 
-export default function TopScreen() {
+export default function TopScreen({ title }) {
   return (
     <>
       <Image source={topImage} style={styles.topImage} />
-      <Text style={styles.title}>Detalhes da Cesta</Text>
+      <Text style={styles.title}>{title}</Text>
     </>
   )
 }

@@ -4,13 +4,13 @@ import { StyleSheet, View } from 'react-native'
 import TopScreen from './components/TopScreen'
 import Details from './components/Details'
 
-export default function Basket() {
+export default function Basket({ topScreen, details }) {
   return (
     <>
-      <TopScreen />
+      <TopScreen {...topScreen} />
 
       <View style={styles.bucket}>
-        <Details />
+        <Details {...details} />
       </View>
     </>
   )
